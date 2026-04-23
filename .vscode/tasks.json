@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run C Program",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "gcc main.c -o main; if ($?) { .\\main }"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
