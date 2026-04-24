@@ -7,7 +7,7 @@
       "command": "powershell",
       "args": [
         "-Command",
-        "gcc main.c -o main; if ($?) { .\\main }"
+        "gcc ${file} -o ${fileDirname}\\main; if ($?) { & \"${fileDirname}\\main\" }"
       ],
       "group": {
         "kind": "build",
