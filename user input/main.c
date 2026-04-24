@@ -21,7 +21,7 @@ int main(){
     printf("Enter your full name: ");  
     //scanf("%s", &name); // this only works with 1 word; scanf stops when it sees white space
     fgets(name, sizeof(name), stdin);
-    //name[strlen(name) - 1] = '\0';  // only use this if you call your name first. Eliminates \n after hitting enter "removes unwanted new line"
+    name[strlen(name) - 1] = '\0';  // only use this if you call your name first. Eliminates \n after hitting enter "removes unwanted new line"
 
     printf("Your name is %s\n", name);
     printf("Your age is %d\n", age);
