@@ -5,15 +5,29 @@ int main(){
     // if statement = Do some code if a condition is true.
     //                If the condition is false, don't do it.
 
-    int age = 21;
+    int age = 0;
+    printf("Enter your age: ");
+    scanf("%d", &age);
 
-    if (age >= 18)
+    if (age >= 65)
+    {
+        printf("You are a senior");
+    } 
+    else if (age >= 18)
     {
         printf("You are an adult");
-    } 
-    else
+    }
+    else if (age > 0)
     {
         printf("You are a child");
+    }
+    else if (age == 0)
+    {
+        printf("You are a newborn");
+    }
+    else
+    {
+        printf("You are not alive");
     }
 
 
